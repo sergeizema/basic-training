@@ -1,3 +1,14 @@
+#include "MyForm.h"
+#include <Windows.h>
+using namespace ProjectName; // Название проекта
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+	Application::Run(gcnew MyForm);
+	return 0;
+}
+
+
 #include <iostream> // для организации ввода-вывода
 
 using namespace std; // пространство имен 
